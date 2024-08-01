@@ -1,0 +1,337 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-container, .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 60px); /* Adjusting height to account for navbar height */
+  padding-top: 60px; /* Ensure the content starts below the navbar */
+}
+
+.dashboard-container {
+  padding: 2em;
+  padding-top: 60px; /* Ensure the content starts below the navbar */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+}
+
+.card-title, .dashboard-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.card-form .form-group {
+  margin-bottom: 1em;
+}
+
+.card-form .form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #666;
+}
+
+.card-form .form-group input {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.75em;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.card-footer {
+  text-align: center;
+  margin-top: 1em;
+  color: #666;
+}
+
+.card-footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.card-footer a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin-right: 1em;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #777;
+}
+
+.note-form-container, .note-list-container {
+  margin-bottom: 2em;
+}
+
+.note-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-form-container textarea {
+  width: 80%;
+  height: 100px;
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+.note-form-container select {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+.note-form-container button {
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.note-form-container button:hover {
+  background-color: #555;
+}
+
+.note-filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.note-filter-container select {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.note-list-container {
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.note-list-container h2 {
+  margin-top: 0;
+}
+
+.note-list-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.note-list-container ul li {
+  background-color: #f9f9f9;
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+
+.note-list-container ul li:last-child {
+  border-bottom: none;
+}
+
+.note-list-container ul li .note-content {
+  flex-grow: 1;
+}
+
+.note-list-container ul li .note-type {
+  margin-left: 1.5em;
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.note-list-container ul li .note-type.important {
+  background-color: #e74c3c; /* Red for important notes */
+}
+
+.note-list-container ul li .note-type.low-priority {
+  background-color: #3498db; /* Blue for low priority notes */
+}
+
+.note-list-container ul li .btn-container {
+  display: flex;
+  gap: 0.5em;
+}
+
+.note-list-container ul li button {
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+}
+
+.note-list-container ul li button:hover {
+  background-color: #555;
+}
+
+.note-versions-container {
+  padding: 1em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2em;
+}
+
+.note-versions-container h2 {
+  margin-top: 0;
+}
+
+.note-versions-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.note-versions-container ul li {
+  background-color: #f9f9f9;
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+
+.note-versions-container ul li:last-child {
+  border-bottom: none;
+}
+
+.note-versions-container ul li .note-type {
+  margin-left: 1.5em;
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.note-versions-container ul li .note-type.important {
+  background-color: #e74c3c; /* Red for important notes */
+}
+
+.note-versions-container ul li .note-type.low-priority {
+  background-color: #3498db; /* Blue for low priority notes */
+}
+
+.note-versions-container ul li .version-actions {
+  display: flex;
+  gap: 0.5em;
+}
+
+.note-versions-container ul li button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.note-versions-container ul li button:hover {
+  background-color: #555;
+}
+
+.note-versions-container button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+
+.note-versions-container button:hover {
+  background-color: #555;
+}
+
+.home-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* Adjust height to account for navbar height */
+  padding-top: 60px; /* Ensure the content starts below the navbar */
+}
+
+.home-image {
+  max-width: 100%;
+  height: auto;
+}
